@@ -16,15 +16,8 @@ final class ContactDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        if let contact = contact {
-//            if let telephone = contact.telephone {
-//                telephoneLabel.text = telephone
-//            }
-//            if let email = contact.email {
-//                emailLabel.text = email
-//            }
-//        }
-        telephoneLabel.text = contact.telephone
-        emailLabel.text = contact.email
+        
+        telephoneLabel.text = "Phone: \(contact.telephone ?? "нет данных")"
+        emailLabel.text = "Email: \(contact.email ??  "нет данных")"
     }
 }
