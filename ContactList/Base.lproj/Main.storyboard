@@ -33,6 +33,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hDe-Yq-ifv" kind="show" id="7Ni-dQ-WWA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -46,20 +49,21 @@
             </objects>
             <point key="canvasLocation" x="125" y="-280"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="nY4-kj-Ocs">
+        <!--Person List-->
+        <scene sceneID="6Aj-Nl-Suq">
             <objects>
-                <viewController id="k4A-nr-JHI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gko-A8-Juu">
+                <viewController id="hDe-Yq-ifv" customClass="ContactDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AmF-sT-aoy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4WV-2f-b7s"/>
+                        <viewLayoutGuide key="safeArea" id="eXz-5j-ppz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Person List" id="DfL-7f-2gr"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wXQ-qu-rfn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxJ-tv-xPF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="-280"/>
+            <point key="canvasLocation" x="900" y="-275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CU5-Ew-joV">
