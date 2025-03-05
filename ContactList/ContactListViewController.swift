@@ -15,7 +15,13 @@ final class ContactListViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = 80
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        let contactDetailsVC = segue.destination as? ContactDetailsViewController
+        contactDetailsVC?.contact = contactList[indexPath.row]
+    }
 
 }
 
