@@ -13,6 +13,7 @@ final class ContactListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 80
     }
 
 
@@ -31,7 +32,7 @@ extension ContactListViewController {
         
         var content = cell.defaultContentConfiguration()
         content.text = contact.family + " " + contact.name
-        content.image = UIImage(named: String(Int.random(in: 1...42)))
+        content.image = UIImage(named: String(Int.random(in: 1...42)) + ".png")
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
         cell.contentConfiguration = content
