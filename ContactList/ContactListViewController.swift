@@ -27,12 +27,11 @@ extension ContactListViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactList", for: indexPath)
-        let track = contactList[indexPath.row]
+        let contact = contactList[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
-        content.text = track.family
-        content.secondaryText = track.name
-        content.image = UIImage(named: track.title)
+        content.text = contact.family + " " + contact.name
+        content.image = UIImage(named: String(Int.random(in: 1...42)))
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
         cell.contentConfiguration = content
